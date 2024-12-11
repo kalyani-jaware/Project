@@ -3,7 +3,7 @@ from config import GOOGLE_CLOUD_BUCKET_NAME
 import os
 
 # print(os.cwd())
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/service-credentials.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/kaja7104_colorado_edu/service-credentials.json"
 
 def upload_to_gcs(file_path, destination_blob_name):
     client = storage.Client(project='lab-5-437901')
